@@ -1,0 +1,19 @@
+{
+  "name": "mrm-task-ava",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": "sapegin/mrm-tasks",
+  "keywords": [
+    "mrm",
+    "mrm-task"
+  ],
+  "dependencies": {
+    "mrm-core": "^2.1.3"
+  }
+}
