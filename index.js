@@ -20,6 +20,7 @@ function task() {
    install('@babel/polyfill')
    install('@ava/babel-preset-stage-4')
    install('tsconfig-paths')
+   install('typescript')
    const pkg = packageJson()
     .setScript('test', 'ava')
     .setScript('test:watch', 'ava --watch')
