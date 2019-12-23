@@ -13,11 +13,38 @@ const {
 function task() {
    const file = json('./package.json');
    file.exists()
+   install('ts-node')
+   install('esm')
+   install('@babel/register')
+   install('@babel/polyfill')
+   install('@ava/babel-preset-stage-4')
    file.merge({
        "ava": {
           "compileEnhancements": false,
           "extensions": [ "ts"],
-          "require": [ "ts-node/register"],
+          "require": [
+            "esm",
+            "ts-node/register",
+            "tsconfig-paths/register",
+            "@babel/register",
+            "@babel/polyfill",
+          ],
+          "babel": {
+          "testOptions": {
+            "plugins": [
+              "@babel/plugin-syntax-jsx"
+            ],
+            "presets": [
+              "module:ava/stage-4",
+              {
+                "modules": false
+              }
+            ],
+            "extensions": [
+              "ts"
+            ]
+          }
+        },
           "files": ["src/**/*.spec.ts "]
         }
       })
