@@ -18,6 +18,10 @@ function task() {
    install('@babel/register')
    install('@babel/polyfill')
    install('@ava/babel-preset-stage-4')
+   const pkg = packageJson()
+    .setScript('test', 'ava')
+    .setScript('test:watch', 'ava --watch')
+    .save()
    file.merge({
        "ava": {
           "compileEnhancements": false,
