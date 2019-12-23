@@ -51,8 +51,7 @@ function task() {
               "ts"
             ]
           }
-        },
-          "files": ["src/**/*.spec.ts "]
+        }
         }
       })
    file.save();
