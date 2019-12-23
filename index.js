@@ -16,6 +16,7 @@ function task() {
    install('ts-node')
    install('esm')
    install('@babel/register')
+   install('@babel/core')
    install('@babel/polyfill')
    install('@ava/babel-preset-stage-4')
    install('tsconfig-paths')
