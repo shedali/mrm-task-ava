@@ -13,16 +13,14 @@ const {
 function task() {
    const file = json('./package.json');
    file.exists()
-   file.merge({"ava":{
-    "compileEnhancements": false,
-      "extensions": [
-        "ts"
-      ],
-      "require": [
-        "ts-node/register"
-      ],
-      files: ["src/**/*.spec.ts "]
-    })
+   file.merge({
+       "ava": {
+          "compileEnhancements": false,
+          "extensions": [ "ts"],
+          "require": [ "ts-node/register"],
+          "files": ["src/**/*.spec.ts "]
+        }
+      })
    file.save();
 }
 
