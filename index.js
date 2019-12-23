@@ -15,12 +15,13 @@ function task() {
    file.exists()
    install('ts-node')
    install('esm')
+   install('ava')
    install('@babel/register')
    install('@babel/core')
    install('@babel/polyfill')
    install('@ava/babel-preset-stage-4')
-   install('tsconfig-paths')
    install('typescript')
+   install('@types/node')
    const pkg = packageJson()
     .setScript('test', 'ava')
     .setScript('test:watch', 'ava --watch')
@@ -32,7 +33,6 @@ function task() {
           "require": [
             "esm",
             "ts-node/register",
-            "tsconfig-paths/register",
             "@babel/register",
             "@babel/polyfill",
           ],
