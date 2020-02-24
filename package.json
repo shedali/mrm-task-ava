@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo todo"
   },
+  "registry": "https://registry.npmjs.org",
   "author": "",
   "license": "ISC",
   "repository": "sapegin/mrm-tasks",
