@@ -1,6 +1,6 @@
 # mrm-task-avats
 
-Setup AVA in your project with typescript support
+[MRM Task](sapegin/mrm-tasks) for setup of AVA in your project with typescript support
 
 ## Change log
 
