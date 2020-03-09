@@ -2,8 +2,8 @@
 
 ## Usage
 
-`npm install -g mrm mrm-task-avats`
-`npx mrm mrm-task-avats`
+- `npm install -g mrm mrm-task-avats`
+- `npx mrm mrm-task-avats`
 
 [MRM Task](sapegin/mrm-tasks) for setup of AVA in your project with typescript support
 
